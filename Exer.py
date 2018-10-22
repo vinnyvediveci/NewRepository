@@ -59,7 +59,7 @@ for i in q6:
         print("fizzbuzz")
     else:
         print("nope")
-
+#reger
 q6 = [33, 56, 76, 78, 45, 56]
 
 for i in q6:
