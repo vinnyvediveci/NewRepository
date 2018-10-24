@@ -10,9 +10,10 @@ class BattleShipGame:
                    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
-    def add(self, ship, x1, y1):
+    def add(self, ship, x1, y1, x2, y2, changeTo):
         assert isinstance(ship, Ship)
-        BattleShipGame.battleField[x1][y1] = 6
+        BattleShipGame.battleField[x1][y1] = changeTo
+        BattleShipGame.battleField[x2][y2] = changeTo
 
         #if x1 == x2:
           #y1 = BattleShipGame.battleField[y1]
@@ -65,7 +66,7 @@ class Carrier(Ship):
         Ship.__init__(self,  5)
 
 battleShipGame = BattleShipGame()
-battleShipGame.add(Battleship(), 0, 2)
+battleShipGame.add(Battleship(), 0, 2, 1, 2, 9)
 
 #
 
