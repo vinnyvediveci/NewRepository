@@ -32,6 +32,8 @@ print(socket.gethostname())
 httpd.serve_forever()
 
 
+pid = open('public/pid.txt', "r").read()
+os.kill(int(pid), 15)
 
 
 

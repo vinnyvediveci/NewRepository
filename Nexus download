@@ -1,0 +1,8 @@
+#!/usr/bin/python
+
+
+#wget http://download.sonatype.com/nexus/3/latest-unix.tar.gz
+#sudo tar xvf latest-unix.tar.gz -C /opt
+#sudo ln -s /opt/nexus-3.3.1-01/ /opt/nexus
+#$ sudo adduser nexus
+#$ sudo chown -R nexus:nexus /opt/nexus
